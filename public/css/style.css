@@ -1,0 +1,139 @@
+/* .cadre{
+    background-color: white;
+    height: 150px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+} */
+.garb{
+    background-color: #172B4D !important;
+    height: 300px;
+    width: 350px;
+    margin-left: 450px;
+    margin-top: 33px;
+    border-radius: 7px;
+    color: white;
+    padding: 50px;   
+    text-align: center;
+    font-size: 25px;
+}
+
+.anim{
+    font-size: 30px;
+    padding-bottom: 2px;
+    font-weight: 900;
+}
+.ani{
+    font-size: 30px;
+    padding-bottom: 2px;
+    font-weight: 900;
+}
+.sd{
+    margin-right: 210px;
+}
+.sdv{
+    margin-right: 250px;
+}
+
+.bienvenue{
+    color: white;
+}
+
+.back{
+    background-image: url(../image/fem.jpg);
+    background-size: cover;
+}
+.backe{
+    background-color: #F1F3F6;
+}
+.im{
+    padding-top: 5px;
+}
+
+.farida{
+    background-color: #172B4D !important;
+    text-align: center !important;
+    font-weight: bold !important;
+    color: white !important;
+    font-size: 35px;
+}
+
+.faridas{
+    background-color: #172B4D !important;
+    font-weight: bold !important;
+    color: white !important;
+}
+.imd{
+    padding-top: 5px;
+    padding-left: 150px;
+}
+.edw{
+    width: 150px;
+    height: 35px;
+    border: outset;
+    border-color: white;
+    font-size: 20px;
+}
+
+.edw:hover{
+cursor: pointer;
+color: white;
+background-color: #172B4D;
+border-radius: 10px;
+box-shadow: white;
+}
+
+.footer{
+    background-color: #172B4D;
+    margin-top: 33px;
+    height: 35px;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+
+.voir{
+ color: white;
+ font-size: 20px;
+ margin-right: 40px;
+}
+
+.vois{
+    color: #172B4D ;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: outset;
+    border-color: white
+   }
+
+.gb{
+    position: relative;
+    margin: 20px;
+}
+
+.gt{
+    position: relative;
+    margin: 20px;
+}
+
+.tr{
+height: 38px;
+width: 315px;
+font-size: 15px;
+border-radius: 5px;
+border: outset;
+border-color: white
+}
+
+.td{
+    height: 33px;
+    width: 230px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: outset;
+    border-color: white;
+    }
+
+
+    
