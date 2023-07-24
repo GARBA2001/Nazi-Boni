@@ -56,16 +56,68 @@
     font-weight: bold !important;
     color: white !important;
     font-size: 35px;
+    
+}
+ /* .faridas{
+    align-items: center;
+    height: 70px;
+    padding: 0 8%;
+    display: flex !important;
+}  */
+
+.mou{
+    padding-left: 500px;
+}
+.ul{
+width: 100%;
+text-align: center;
 }
 
-.faridas{
-    background-color: #172B4D !important;
-    font-weight: bold !important;
-    color: white !important;
+.li{
+display: inline-block;
+list-style: none;
+margin: 10px 20px;
 }
+
+.aa{
+    text-decoration: none;
+    color: white;
+}
+
+
+.ty{
+position: relative;
+width: 80%;
+padding: 10px 10%;
+display: flex !important;
+align-items: center;
+justify-content: space-between;
+background:#172B4D ;
+color: white;
+} 
+
+.profile{
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.naf{
+    display: flex;
+    border-radius: 20px;
+    border: none;
+}
+
+.nom{
+    width: 135px;
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
 .imd{
-    padding-top: 5px;
-    padding-left: 150px;
+    /* padding-top: 5px;
+    padding-left: 150px; */
+    cursor: pointer;
 }
 .edw{
     width: 150px;
@@ -135,5 +187,237 @@ border-color: white
     border-color: white;
     }
 
+.sous-m1{
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
 
+ .sous-m1.open-menu{
+    max-height: 400px;
+} 
+
+.sous-m2{
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+}
+
+.sous-m3 hr{
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 7px 0 5px;
     
+}
+
+/* .sous-m3{
+    display: flex;
+align-items: center;
+} */
+
+.update{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin: 12px 0;
+}
+
+.update h4{
+    width: 100%;
+}
+
+.update img{
+    width: 25px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+.update span{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+
+.update:hover span{
+    transition: translateX(5px);
+}
+.update:hover h4{
+    font-weight: 900;
+}
+.dis{
+    display: flex;
+    justify-content: space-between;
+}
+
+.vf{
+    display: flex;
+    justify-content: space-between;
+    height: 450px;
+    background: white;
+    width: 1000px;
+    text-align: center;
+    margin-left: 200px;
+    margin-top: 25px;
+    border-radius: 8px;
+}
+.form{
+    background: #172B4D;
+    height:450px ;
+    width:700px; ;
+    margin-top: -24px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    z-index: 2;
+    flex-direction: column;
+    inset: 4px;
+    justify-content: space-between;
+    padding-left: 40px;
+  
+}
+.inscrire{
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    padding-top: 15px;
+    font-size: 30px;
+}
+
+.form-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.aris{
+display: flex;
+flex-direction: column;
+
+}
+
+.span{
+    margin-right: 250px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    /* position: absolute; */
+    left: 0;
+    pointer-events: none;
+}
+
+.spane{
+    margin-right: 155px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    /* position: absolute; */
+    left: 0;
+    pointer-events: none;
+}
+
+.spane1{
+    margin-right: 175px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    /* position: absolute; */
+    left: 0;
+    pointer-events: none;
+}
+
+.spane2{
+    margin-right: 130px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    /* position: absolute; */
+    left: 0;
+    pointer-events: none;
+}
+
+.span3{
+    margin-right: 50px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    /* position: absolute; */
+    left: 0;
+    pointer-events: none;
+}
+
+
+.inp-box{
+    position: relative;
+    width: 600px;
+    margin-top: 30px;
+}
+.vf form .inp-box input{
+    position: relative;
+    width: 85%; 
+    padding: 8px 4px 4px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5em;
+    z-index: 10;
+    border-color: #F1F3F6;
+    border-radius: 5px;
+}
+
+.put{
+    position: relative;
+    width: 90%; 
+    padding: 8px 4px 4px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5em;
+    z-index: 10;
+    border-color: #F1F3F6;
+    border-radius: 5px;
+}
+.vf form .inp-box input:hover{
+
+background: #F1F3F6;
+color: black;
+}
+.put:hover{
+
+    background: #F1F3F6;
+    color: black;
+    }
+.select{
+    background: #F1F3F6;
+    color: #172B4D;
+}    
+.fri{
+    background: #172B4D;
+    color: white;
+    border: white;
+}
+
+.span:valid,
+.span:focus,
+.box:valid,
+.box:focus
+{
+    color: #fff;
+    font-size: 0.75em;
+    tansform: translateY(-34px);
+   
+}
+.jus{
+padding-top: 100px;
+}

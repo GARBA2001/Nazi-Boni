@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\EtudiantController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,3 +30,21 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+
+
+
+Route::get('/inscrire', [EtudiantController::class, 'showForm'])->name('inscrire.form');
+Route::post('/inscrire', [EtudiantController::class, 'store'])->name('inscrire.submit');
+
+
+Route::get('/liste', [EtudiantController::class, 'index'])->name('etudiants.index');
+
+Route::get('/delete', [EtudiantController::class, 'index'])->name('etudiants.index');
+Route::post('/delete/{id}', [EtudiantController::class, 'destroy'])->name('etudiants.destroy');
+
+Route::get('/detail', [EtudiantController::class, 'index'])->name('detail.index');
+Route::get('/detail/{id}', [EtudiantController::class, 'show'])->name('detail.show');
+
+Route::get('/carte', [EtudiantController::class, 'index'])->name('carte.index');
+Route::get('/carte/{id}', [EtudiantController::class, 'sho'])->name('carte.show');
