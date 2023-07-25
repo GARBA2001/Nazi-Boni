@@ -21,13 +21,13 @@
          <div> <img src="{{ asset('image/ijk.gif')}}" width="650px" height="400px" alt="" > </div> 
         <!-- <div> <img src="{{ asset('image/inf.jpg')}}"alt="" > </div> -->
         <div> 
-            <h1>Ecole Superieur d'Informatique</h1>
-            <p>“L'informatique, ça fait gagner beaucoup de temps... à condition d'en avoir beaucoup 
+            <h1 Class="ecole"> <font class="rouge">E</font>COLE <font class="rouge">S</font>UPERIEUR D'<font class="rouge">I</font>NFORMATIQUE</h1>
+            <p Class="cole">“L'informatique, ça fait gagner beaucoup de temps... à condition d'en avoir beaucoup 
                 devant soi !” “La révolution informatique fait gagner un temps fou aux hommes, mais 
                 ils le passent avec leur ordinateur !” “Entre le bit, unité de mesure informatique, 
                 et les queues de sondage, le circuit imprimé est un peu sexiste.”</p>
-                <button><a href="">Liste des etudiants </a></button>
-                <button><a href="">Ajouter un etudiant</a></button>
+                <button class="ton"><a href="liste">Liste des etudiants </a></button>
+                <button class="ton"><a href="inscrire">Ajouter un etudiant</a></button>
         </div>
     </div>
 </div>

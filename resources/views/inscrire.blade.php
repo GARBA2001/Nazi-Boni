@@ -1,5 +1,11 @@
 <x-app-layout>
 
+<x-slot name="header">
+        <h2 >
+            {{ __('Inscrire un étudiant') }}
+        </h2>
+    </x-slot>
+
     <div class="vf"><br>
         <div> <img src="{{ asset('image/logo.png')}}" class="jus" width="200px" height="200px" alt=""> </div><br>
 

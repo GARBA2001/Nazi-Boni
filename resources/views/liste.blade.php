@@ -2,17 +2,42 @@
 
 <x-app-layout>
 
-    <h1>Liste des étudiants</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste</title>
 
-    <table>
+    <!-- Boostraps -->
+          <!-- <link rel="stylesheet" href="{{ asset('style/bootstrap-5.0.2-dist/css/bootstrap.min.css')}}">  -->
+</head>
+<body>
+<x-slot name="header">
+        <h2 >
+            {{ __('Liste') }}
+        </h2>
+    </x-slot>
+
+    <div class="table">
+        <div class="table_header">
+            <p>Liste des étudiants</p>
+            <div>
+                <input type="text" class="op" placeholder="rechercher">
+                <button class="add_new">rechercher</button>
+            </div>
+        </div>
+       
+        <div class="table_section">
+        <table>
         <thead>
             <tr>
                 <th>Nom</th>
                 <th>Prénom</th>
-                <th>Date de Naissance</th>
+                <th>Naissance</th>
                 <th>Cycle</th>
                 <th>Niveau d'étude</th>
-                <th>Année Académique</th>
+                <th>Année </th>
                 <th>Photo</th>
                 <th>Action</th>
                 <th><a href="">Imprimer</a></th>
@@ -35,14 +60,23 @@
                     @endif
                 </td>
                 <td>
-              <a href="/detail/{{ $etudiant->id }}"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-              <a href="/modifier/{{ $etudiant->id }}"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-              <a href="/delete/{{ $etudiant->id }}"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+                   <button class="button"><a href="/detail/{{ $etudiant->id }}"><i class="fa fa-info-circle" aria-hidden="true"></i></a></button> 
+               <button class="button"><a href="/modifier/{{ $etudiant->id }}"><i class='fas fa-edit'></i></a></button>
+               <button class="button"><a href="/delete/{{ $etudiant->id }}"><i class="fa fa-trash" aria-hidden="true"></i></a></button>
                 </td>
                 <td><a href="/carte/{{ $etudiant->id }}">Imprimer</a></td>
             </tr>
             @endforeach
         </tbody>
-    </table>
+    </table> 
+        </div>
+
+    </div>
+
+    <!-- <h1 class="list">Liste des étudiants</h1> -->
+
+    
+</body>
+</html>
 
 </x-app-layout>

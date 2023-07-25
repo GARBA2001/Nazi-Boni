@@ -1,4 +1,4 @@
-<div class=" faridas">
+<div>
 <nav x-data="{ open: false }" >
     <!-- Primary Navigation Menu -->
     <div >
@@ -18,21 +18,18 @@
                 <!-- Navigation Links -->
                 <ul class="ul"> 
                     <li class="li"><x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="aa">
-                        {{ __('Dashboard') }}
+                        {{ __('Accueil') }}
                     </x-nav-link></li>
                     
 
                     <li class="li"><x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="aa">
-                        {{ __('Dashboard') }}
+                        {{ __('Ajouter un étudiant') }}
                     </x-nav-link></li>
 
                     <li class="li"><x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="aa">
-                        {{ __('Dashboard') }}
+                        {{ __('Voir la liste') }}
                     </x-nav-link></li>
 
-                    <li class="li"><x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" class="aa">
-                        {{ __('Dashboard') }}
-                    </x-nav-link></li>
                </ul>
 
           <!-- Fin de Logo et Menu -->
@@ -102,12 +99,12 @@
                                                 this.closest('form').submit();">
                                 {{ __('Log Out') }}
                             </x-dropdown-link>
-                        </form>
+                        </form> <br>
 
                     </x-slot>
                 </x-dropdown>
 
-            <div >
+            <div Class="toi" >
                 <x-responsive-nav-link class="update" :href="route('profile.edit')">
                 <img src="{{ asset('image/logout.png')}}" alt="">
                     <h4>{{ __('Profile') }}</h4>
@@ -117,14 +114,14 @@
                 
                  <x-responsive-nav-link class="update" :href="route('profile.edit')">
                  <img src="{{ asset('image/logout.png')}}" alt="">
-                    <h4>{{ __('Profile') }}</h4>
+                    <h4>{{ __('Ajouter un compte') }}</h4>
                     <span></span>
                 </x-responsive-nav-link>
                  <br>
 
                  <x-responsive-nav-link class="update" :href="route('profile.edit')">
                  <img src="{{ asset('image/logout.png')}}" alt="">
-                    <h4>{{ __('Profile') }}</h4>
+                    <h4>{{ __('Parametre') }}</h4>
                     <span></span>
                 </x-responsive-nav-link>
                  <br>

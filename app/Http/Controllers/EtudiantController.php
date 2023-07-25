@@ -49,8 +49,6 @@ class EtudiantController extends Controller
     }
 
 
-
-
     public function index()
     {
         $etudiants = Etudiant::all();

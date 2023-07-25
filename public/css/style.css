@@ -58,6 +58,9 @@
     font-size: 35px;
     
 }
+.faridas{
+    height: 10px;
+}
  /* .faridas{
     align-items: center;
     height: 70px;
@@ -198,8 +201,224 @@ border-color: white
 }
 
  .sous-m1.open-menu{
-    max-height: 400px;
+    max-height: 900px;
 } 
+.table{
+    width: 100%;
+}
+.table_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20 px;
+    background-color: #AE0001;
+}
+.table_header p{
+    color: white;
+}
+
+.button{
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px;
+}
+td button:nth-child(1){
+    background-color: #F1F3F6;
+}
+
+td button:nth-child(2){
+    background-color: #F1F3F6;
+}
+.op{
+    padding: 10px 20px;
+    margin: 0 10px ;
+    outline: none;
+    border: 1px solid violet;
+    border-radius: 6px;
+    color: violet ;
+}
+
+.add_new{
+    padding: 10px 20px;
+    color: #fff;
+    background-color: green;
+}
+.table_section{
+    height: 650px;
+    overflow: auto;
+}
+table{
+    width: 100%;
+    table-layout: fixed;
+    min-width: 1000px;
+    border-collapse: collapse;
+}
+
+thead th{
+    position: sticky;
+    top: 0;
+    background-color: #ccc;
+    color: #172B4D;
+    font: size 15px; 
+}
+th,td{
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 20px;
+    word-break: break-all;
+    text-align: center;   
+}
+tr:hover td{
+    color: #F1F3F6;
+    cursor: pointer;
+    background: #172B4D;
+    opacity: 0.8;
+    font-weight: 900;
+    font-size: 15px;
+}
+.buty a{
+    text-decoration: none;
+    color: #F1F3F6;
+}
+.buty{
+    color: #F1F3F6;
+    background: green;
+    border: unset;
+    border-radius: 7px;
+    border-color: white;
+    height: 27px;
+    width: 85px;
+    margin-top: 20px;
+}
+
+
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin-top: -70px;
+}
+
+.card{
+    width: 400px;
+    height: 440px;
+    border-radius: 12px;
+    background-color: #AE0001;
+    padding-top: 2%;
+    overflow: hidden;
+}
+
+.card .title h2{
+     font-family: Gilroy;
+     color: white;
+     font-size: 2rem;
+     text-align: center;
+     padding: 2%;
+     margin-top: -20px;
+}
+
+.card .details{
+    background-color: #172B4D;
+    height: 35%;
+    margin-top: 12px;
+    border-top-left-radius: 75px;
+    padding: 5%;
+    color: white;
+    font-family: Open Sans;
+    display: flex;
+    justify-content: center;
+}
+.coli{
+    margin-left: 45px;
+    margin-top: 32px;
+}
+.card .details .col{
+    width: 50%;
+}
+.card .details .col{
+    width: 50%;
+}
+.card .details li{
+    margin-top: 2%;
+    font-weight: 1rem;
+}
+.card .title p{
+    font-family: Open Sans;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    margin-top: -30px;
+}
+.card .image .inner{
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.card .image{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    align-items: center;
+    
+}
+.card .image .outer{
+    background-color: #172B4D;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%  ;
+    display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.card .image .inner img{
+    width: 100% ;
+}
+
+.card .name{
+    color: white;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 1.5rem;
+    font-weight: bold ;
+    margin-top: 2%;
+}
+
+.ecole{
+    font-size: 30px;
+    font-weight: 300;
+    margin-left: 50px;
+    color: green;
+}
+.cole{
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: 300;
+    font-size: 25px;
+}
+.ton:hover{
+    cursor: pointer;
+    box-shadow: 0 0 1rem var(#172B4D);
+}
+.ton{
+    margin-left: 50px;
+    height: 35px;
+    text-decoration: none;
+    border-radius: 8px;
+    color: white;
+    background: #172B4D;
+    border-color: white;
+}
+
+.ton a{
+    color: white;
+    text-decoration: none;
+
+}
 
 .sous-m2{
     background: #fff;
@@ -220,12 +439,65 @@ border-color: white
 align-items: center;
 } */
 
+.toi{
+    margin-top: 20px;
+}
+
+.disp{
+    display: flex;
+}
+
+.dispi{
+   margin-left: 100px;
+  
+}
+.tris{
+    background: white;
+    height: 450px;
+    display: flex;
+    position: relative;
+    margin: 0 20px 0 20px;
+    justify-content: space-around;
+}
+.det{
+    background: white;
+    border-radius: 10px;
+    width: 500px;
+    color: #172B4D;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* .sawa{
+    display: flex;
+}
+
+.jutr{
+    display: flex;
+    width: 180px;
+    border-radius: 15px;
+    border-color: white;
+} */
+.dete{
+    background: gray;
+    border-radius: 10px;
+    width: 500px;
+    color: #172B4D;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.update:hover{
+    color:#AE0001;
+    font-weight: 600;
+    font-size: 18px;
+}
+
 .update{
     display: flex;
     align-items: center;
     text-decoration: none;
     color: black;
-    margin: 12px 0;
+    margin-top: -23px;
 }
 
 .update h4{
@@ -278,7 +550,12 @@ align-items: center;
     inset: 4px;
     justify-content: space-between;
     padding-left: 40px;
-  
+}
+.vert{
+    color: green;
+}
+.rouge{
+    color: #AE0001;
 }
 .inscrire{
     color: white;

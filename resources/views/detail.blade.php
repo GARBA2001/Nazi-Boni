@@ -1,25 +1,62 @@
-<!-- resources/views/etudiants/show.blade.php -->
-
 <x-app-layout>
 
-    <h1>Détails de l'étudiant</h1>
 
 
-<p><strong>Photo</strong>    @if($etudiant->photo)
-                        <img src="{{ asset('photos/'.$etudiant->photo) }}" alt="Photo de l'étudiant" width="50px" height="50px">
+<div class="container">
+    <div class="card">
+
+
+
+<div class="title">
+<h2>CARTE ETUDIANT</h2>
+<p>Ecole superieur d'Informatique</p>
+</div>
+
+
+<div class="image">
+
+
+    <div class="outer">
+      
+    <div class="inner">
+        @if($etudiant->photo)
+                        <img src="{{ asset('photos/'.$etudiant->photo) }}" alt="Photo de l'étudiant" >
                     @else
                         Aucune photo
-                    @endif</p>
-    <p><strong>Nom :</strong> {{ $etudiant->nom }}</p>
-    <p><strong>Prénom :</strong> {{ $etudiant->prenom }}</p>
-    <p><strong>Date de Naissance :</strong> {{ $etudiant->date_naissance }}</p>
-    <p><strong>Cycle :</strong> {{ $etudiant->cycle }}</p>
-    <p><strong>Niveau:</strong> {{ $etudiant->niveau_etude }}</p>
-    <p><strong>Annee :</strong> {{ $etudiant->annee_academique }}</p>
-    
-    
-    <!-- Ajoutez d'autres informations à afficher ici si nécessaire -->
+                    @endif
+        </div>
 
-    <a href="" class="btn">Retour</a>
+    </div>
+
+    
+</div>
+<div class="name">
+ {{ $etudiant->nom }}  {{ $etudiant->prenom }}
+</div>
+<div class="details">
+    
+<div class="col">
+  <ul type=none>
+    <li> Née : {{ $etudiant->date_naissance }}</li>
+    <li>Matricule :</li>
+    <li>Niveau : {{ $etudiant->niveau_etude }}</li>
+    <li>Cycle : {{ $etudiant->cycle }}</li>
+    <li>Annee Academique : {{ $etudiant->annee_academique }}</li>
+    <li></li>
+  </ul>
+</div>
+
+<div class="col">
+<img src="{{ asset('image/logob.jpg')}}" class="coli" width="90px" height="70px" alt="">
+</div>
+
+
+
+<div>
+<div>
+    
+
+</div>
+</div>
 
 </x-app-layout>
